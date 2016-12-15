@@ -39,8 +39,8 @@
         sources: [
           {
             type: "video/flash",
-            // rtmpt : false,
-            src:  "rtmp://192.168.0.25:1935/live/mdst"
+            rtmpt : false,
+            src:  "rtmp://localhost:1935/live/mdst"
           },
         ]
       }
@@ -57,7 +57,7 @@
         sources: [
           {
             type: "application/x-mpegurl",
-            src:  "http://192.168.0.25:8888/hls/mdst.m3u8",
+            src:  "http://localhost/hls/mdst.m3u8",
             // src:  "http://wms.shared.streamshow.it/carinatv/carinatv/playlist.m3u8"
           },
         ]
@@ -70,21 +70,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-  <!-- video.js -->
-<!--   <link href="http://vjs.zencdn.net/4.2.0/video-js.css" rel="stylesheet">
-  <script src="http://vjs.zencdn.net/4.2.0/video.js"></script>
- -->
-<!--     <h2>RTMP(video.js)</h2>
-    <video id="rtmp live test" class="video-js vjs-default-skin" controls
-     preload="auto" width="640" height="264" data-setup='{}'>
-      <source src="rtmp://127.0.0.1/live/mdst" type='rtmp/mp4'>
-      <p class="vjs-no-js">
-        To view this video please enable JavaScript, and consider upgrading to a web browser
-        that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-      </p>
-    </video> -->
